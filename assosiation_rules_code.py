@@ -125,7 +125,7 @@ y1 = convert_seconds(execution_times[0][0])
 y2 = convert_seconds(execution_times[1][0])
 
 plt.title('Speed')
-plt.xlabel('minimal support')
+plt.xlabel('minimal confidence')
 plt.ylabel('microseconds')
 plt.bar(x1, y1, label = 'retail', width = 0.015)
 plt.bar(x2, y2, label = 'accidents', width = 0.015)
@@ -136,7 +136,7 @@ y1 = execution_times[0][1]
 y2 = execution_times[1][1]
 
 plt.title('Itemsets')
-plt.xlabel('minimal support')
+plt.xlabel('minimal confidence')
 plt.ylabel('count')
 plt.ylim(1900, 2050)
 plt.bar(x1, y1, label = 'retail', width = 0.015)
